@@ -71,7 +71,7 @@ function App() {
             handleInputChange={handleInputChange}
             toggleCart={toggleCartVisibility}
           />
-          <div className="container-flex">
+          <div className="flex">
             <Recommended handleClick={handleClick} />
             <Products result={result} />
           </div>

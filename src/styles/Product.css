@@ -1,0 +1,126 @@
+/* Container for cards */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 85%;
+  z-index: -2;
+}
+
+/* Individual Card Styling */
+.card {
+  border: 1px solid hsl(0, 0%, 93%);
+  border-radius: 8px;
+  width: 260px;
+}
+
+/* Image Container and Styling */
+.card-img-container {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  padding: 8px;
+  overflow: hidden;
+}
+
+.card:hover .card-img {
+  transform: scale(1.07);
+  transition: transform 0.3s ease;
+  /* Smooth transition */
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.card-details {
+  padding: 8px;
+}
+
+/* Title Styling */
+.card-title {
+  font-size: .99rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: left;
+  margin-right: 16px;
+}
+
+
+
+.card-img {
+  width: 11rem;
+  height: 11rem;
+  object-fit: contain;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+  margin-bottom: 8px;
+}
+
+.card-img:hover {
+  transform: scale(1.05);
+  /* Slight zoom on hover */
+}
+
+/* Reviews and Star Rating */
+.card-reviews {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.empty-star {
+  color: #FFBF00;
+  font-size: 20px;
+}
+
+.total-reviews {
+  font-size: 0.9rem;
+  color: #666;
+  margin-left: 73px;
+}
+
+
+.card-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.new-price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #000;
+  margin-top: .5rem;
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px;
+  width: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #000;
+  color: white;
+}
+
+.cart-icon {
+  font-size: 1.2rem;
+  margin-right: 8px;
+}

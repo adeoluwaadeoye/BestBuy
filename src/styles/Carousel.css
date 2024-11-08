@@ -1,0 +1,145 @@
+/* Global Styles for the Carousel */
+.carousel-slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    min-height: 85vh;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-slide:hover {
+    transform: scale(1.02);
+}
+
+/* Text Section Styles */
+.slide-text-container {
+    max-width: 50%;
+    padding-right: 30px;
+}
+
+.slide-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    /* Darker text for better readability */
+    margin-bottom: 15px;
+    line-height: 1.2;
+    /* Slightly increased line height for readability */
+    text-transform: uppercase;
+    /* Adds emphasis */
+}
+
+.slide-paragraph {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    /* Slightly lighter text color */
+    margin-bottom: 25px;
+}
+
+.view-more-btn {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    /* Light shadow effect on button */
+}
+
+.view-more-btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4);
+    /* Darker shadow on hover */
+    transform: translateY(-2px);
+    /* Slight lift effect on hover */
+}
+
+.view-more-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+    /* Outline effect on focus */
+}
+
+/* Image Section Styles */
+.slide-image-container {
+    max-width: 45%;
+}
+
+.slide-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    /* Rounded corners for the image */
+    object-fit: cover;
+    /* Ensures the image fills the container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Soft shadow around the image */
+}
+
+/* Swiper Navigation Styles */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #007BFF;
+    /* Blue color for navigation arrows */
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Light background to make arrows stand out */
+    padding: 12px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: #0056b3;
+    /* Darker blue on hover */
+    background-color: #ffffff;
+    transform: scale(1.1);
+    /* Slight scale effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carousel-slide {
+        flex-direction: column;
+        /* Stack content vertically on smaller screens */
+        padding: 20px;
+    }
+
+    .slide-text-container {
+        max-width: 100%;
+        padding-right: 0;
+        text-align: center;
+        /* Center text on smaller screens */
+    }
+
+    .slide-heading {
+        font-size: 2rem;
+        /* Smaller heading on mobile */
+    }
+
+    .slide-paragraph {
+        font-size: 1rem;
+        /* Adjust paragraph font size */
+    }
+
+    .view-more-btn {
+        width: 100%;
+        /* Full-width button on mobile */
+    }
+
+    .slide-image-container {
+        max-width: 100%;
+        /* Full-width image */
+        margin-top: 20px;
+        /* Add some spacing between text and image */
+    }
+}
