@@ -1,8 +1,8 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import { useState } from "react";
-import { CartProvider } from "./Context/CartContext";
-import IntroCarousel from "../src/components/Home/IntroCarousel"
+import {BrowserRouter} from "react-router-dom";
+import {useState} from "react";
+import {CartProvider} from "./Context/CartContext";
+import IntroCarousel from "../src/components/Home/IntroCarousel";
 import Navigation from "./components/Navigation/Nav";
 import Products from "./components/Products/Products";
 import Footer from "./components/Footer/Footer";
@@ -37,11 +37,20 @@ function App() {
 
   const filteredData = (products, selected, query) => {
     return products
-      .filter(product =>
-        (!query || product.title.toLowerCase().includes(query.toLowerCase())) &&
-        (!selected || [product.category, product.color, product.company, product.newPrice, product.title].includes(selected))
+      .filter(
+        (product) =>
+          (!query ||
+            product.title.toLowerCase().includes(query.toLowerCase())) &&
+          (!selected ||
+            [
+              product.category,
+              product.color,
+              product.company,
+              product.newPrice,
+              product.title,
+            ].includes(selected))
       )
-      .map(({ id, img, title, star, reviews, prevPrice, newPrice }) => (
+      .map(({id, img, title, star, reviews, prevPrice, newPrice}) => (
         <Card
           key={id}
           id={id}
@@ -60,21 +69,18 @@ function App() {
   return (
     <BrowserRouter>
       <CartProvider>
+        <Navigation
+          query={query}
+          handleInputChange={handleInputChange}
+          toggleCart={toggleCartVisibility}
+        />
         <IntroCarousel />
-        <div className="main-container">
+        <div className="ml-3">
+          <Recommended handleClick={handleClick} />
+        </div>
+        <div className="control">
           <Sidebar handleChange={handleChange} />
-          <div className="product-list">
-            <Products />
-          </div>
-          <Navigation
-            query={query}
-            handleInputChange={handleInputChange}
-            toggleCart={toggleCartVisibility}
-          />
-          <div className="container-flex">
-            <Recommended handleClick={handleClick} />
-            <Products result={result} />
-          </div>
+          <Products result={result} />
 
           <Cart isVisible={isCartVisible} onClose={toggleCartVisibility} />
         </div>

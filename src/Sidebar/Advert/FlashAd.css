@@ -3,13 +3,13 @@
     flex-direction: column;
     align-items: center;
     color: #000;
-    padding: 10px;
     border-radius: 8px;
     text-align: center;
     font-weight: bold;
     animation: pulse 2s infinite;
-    margin-top: 10px;
-    max-width: 220px;
+    margin: 20px 20px 10px 0;
+    max-width: 400px;
+    margin-right: .5rem;
 }
 
 .flash-ad-image {
