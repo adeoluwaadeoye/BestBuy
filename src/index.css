@@ -1,5 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Bentham&family=Cinzel:wght@400..900&family=Habibi&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+:root {
+  --primary: #1f2e88;
+  --secondary: #69d6ff;
+  --hover: #a2d9f5;
+  --black: #333;
+  --white: #fff;
+  --light-color: #666;
+  --light-bg: #eee;
+  --border: .2rem solid rgba(0, 0, 0, .1);
+  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  --pink: hsl(353, 100%, 78%);
+  --violet: violet;
+}
+
+
+:root {
+  --spanish-gray: hsl(0, 0%, 60%);
+  --sonic-silver: hsl(0, 0%, 57%);
+  --eerie-black: hsl(0, 0%, 13%);
+  --salmon-pink: hsl(353, 100%, 78%);
+  --sandy-brown: hsl(29, 90%, 65%);
+  --bittersweet: hsl(0, 100%, 70%);
+  --ocean-green: hsl(152, 51%, 52%);
+  --davys-gray: hsl(0, 0%, 33%);
+  --cultured: hsl(0, 0%, 93%);
+  --white: hsl(0, 100%, 100%);
+  --onyx: hsl(0, 0%, 27%);
+  --fs-1: 1.563rem;
+  --fs-2: 1.375rem;
+  --fs-3: 1.25rem;
+  --fs-4: 1.125rem;
+  --fs-5: 1rem;
+  --fs-6: 0.938rem;
+  --fs-7: 0.875rem;
+  --fs-8: 0.813rem;
+  --fs-9: 0.75rem;
+  --fs-10: 0.688rem;
+  --fs-11: 0.625rem;
+  --weight-300: 300;
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-600: 600;
+  --weight-700: 700;
+  --border-radius-md: 10px;
+  --border-radius-sm: 5px;
+  --transition-timing: 0.2s ease;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -13,6 +62,7 @@ body {
   padding-top: 30px;
   font-family: "Poppins", sans-serif;
   line-height: 1;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -75,4 +125,12 @@ li {
   bottom: -10px;
   left: 0;
   width: 60%;
+}
+
+.rotate {
+  transform: scaleX(-1);
+}
+
+:root {
+  --swiper-navigation-color: #E49A38;
 }

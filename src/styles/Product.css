@@ -1,9 +1,9 @@
 /* Container for cards */
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 0.5rem;
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
   /* Center the grid */
   padding: 1rem;
@@ -14,11 +14,14 @@
 .card {
   border: 1px solid hsl(0, 0%, 93%);
   border-radius: 8px;
-  width: 260px;
+  width: 240px;
+  height: min-content;
   overflow: hidden;
   position: relative;
+  /* background-color: var(--cultured); */
   background-color: #fff;
   transition: transform 0.3s ease;
+  padding: 5px;
 }
 
 /* Image Container and Styling */
@@ -38,9 +41,7 @@
 .card-img {
   width: 11rem;
   height: 11rem;
-  object-fit: contain;
-  border-radius: 4px;
-  margin-bottom: 8px;
+  object-fit: contain; 
 }
 
 /* Card Details */
@@ -51,32 +52,50 @@
 /* Reviews and Stars */
 .card-reviews {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1rem;
 }
 
-.empty-star {
+.filled-star {
+  padding: 0;
+  margin: 0;
+  gap: 0;
   color: #FFBF00;
 }
 
+.filled-star,
+.empty-star {
+  margin-right: 0.3rem;
+  color: #FFBF00;
+}
+
+.empty-star {
+  color: lightgray;
+}
+
 .total-reviews {
+  margin-left: 1.6rem;
   font-size: 0.9rem;
   color: #666;
-  margin-left: 8px;
+}
+
+.card-title {
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: 2px;
+  margin: 0 0 7px 0;
 }
 
 .card-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 }
 
 /* New Price */
 .new-price {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #000;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 1.3rem;
 }
 
 /* Add to Cart Button */
@@ -99,9 +118,11 @@
 }
 
 .add-to-cart-btn:hover {
-  background-color: #000;
+  background-color: var(--pink);
   color: #fff;
+  border: none;
 }
+
 
 .cart-icon {
   margin-right: 5px;

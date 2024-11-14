@@ -2,7 +2,7 @@ const data = [
   {
     id: 1,
     img: "https://m.media-amazon.com/images/I/61t4mpabO+L._AC_UL480_FMwebp_QL65_.jpg",
-    title: "High Back Gaming Chair",
+    title: "High Gaming Chair",
     rating: 4,
     reviews: 4,
     newPrice: "240000",
@@ -13,7 +13,7 @@ const data = [
   {
     id: 2,
     img: "https://m.media-amazon.com/images/I/71WoN3Vt-gL._AC_UY327_FMwebp_QL65_.jpg",
-    title: "Vpro Super Headset",
+    title: "Vpro Headset",
     rating: 3,
     reviews: 4,
     newPrice: "120000",
@@ -24,10 +24,10 @@ const data = [
   {
     id: 3,
     img: "https://m.media-amazon.com/images/I/71DHV9GZSOL._AC_UY327_FMwebp_QL65_.jpg",
-    title: "HP victus 15.6",
+    title: "HP victus",
     rating: 5,
     reviews: 4,
-    newPrice: "1600000",
+    newPrice: "960000",
     company: "HP",
     color: "black",
     category: "laptop",
@@ -46,7 +46,7 @@ const data = [
   {
     id: 5,
     img: "https://m.media-amazon.com/images/I/61mpMH5TzkL._AC_UL480_FMwebp_QL65_.jpg",
-    title: "Logitech Gaming Mouse",
+    title: "Gaming Mouse",
     rating: 5,
     reviews: 4,
     newPrice: "30000",
@@ -57,7 +57,7 @@ const data = [
   {
     id: 6,
     img: "https://m.media-amazon.com/images/I/61hxzGfRpKL._AC_UL480_FMwebp_QL65_.jpg",
-    title: "XBOX Gaming Controller",
+    title: "XBOX Controller",
     rating: 5,
     reviews: 4,
     newPrice: "100000",
@@ -68,7 +68,7 @@ const data = [
   {
     id: 7,
     img: "https://m.media-amazon.com/images/I/61R8OgObRsL._AC_UL480_FMwebp_QL65_.jpg",
-    title: "Amazon T77 Microphone",
+    title: "T77 Microphone",
     rating: 4,
     reviews: 4,
     newPrice: "130000",
@@ -79,7 +79,7 @@ const data = [
   {
     id: 8,
     img: "https://m.media-amazon.com/images/I/81dAe2wXIqL._AC_UL480_FMwebp_QL65_.jpg",
-    title: "LG Ultragear Monitor",
+    title: "Ultragear Monitor",
     rating: 5,
     reviews: 4,
     newPrice: "180000",
@@ -90,7 +90,7 @@ const data = [
   {
     id: 9,
     img: "https://m.media-amazon.com/images/I/41ECK5cY-2L._AC_UY327_FMwebp_QL65_.jpg",
-    title: "Playstation Console Slim",
+    title: "Playstation",
     rating: 5,
     reviews: 4,
     newPrice: "640000",
@@ -101,7 +101,7 @@ const data = [
   {
     id: 10,
     img: "https://m.media-amazon.com/images/I/61CGHv6kmWL._AC_UY327_FMwebp_QL65_.jpg",
-    title: "Bengoo G900 Stereo",
+    title: "Bengoo Stereo",
     rating: 5,
     reviews: 4,
     newPrice: "87000",
@@ -112,13 +112,13 @@ const data = [
   {
     id: 11,
     img: "https://m.media-amazon.com/images/I/61vRT8YrsHL._AC_UL480_FMwebp_QL65_.jpg",
-    title: "Autofill Gaming Chair",
+    title: "Autofill Chair",
     rating: 5,
     reviews: 4,
     newPrice: "120000",
     company: "Xiang",
     color: "gray",
-    category: "headset",
+    category: "chair",
   },
   {
     id: 12,
@@ -134,7 +134,7 @@ const data = [
   {
     id: 13,
     img: "https://m.media-amazon.com/images/I/619NnSrYabL._AC_UY327_FMwebp_QL65_.jpg",
-    title: "Playstation Pulse Elite",
+    title: "Playstation Elite",
     rating: 5,
     reviews: 4,
     newPrice: "80000",
@@ -156,7 +156,7 @@ const data = [
   {
     id: 15,
     img: "https://m.media-amazon.com/images/I/61C5t1ltM5L._AC_UY327_FMwebp_QL65_.jpg",
-    title: "Base Wireless Headphone",
+    title: "C4R Headphone",
     rating: 5,
     reviews: 4,
     newPrice: "140000",
@@ -167,7 +167,7 @@ const data = [
   {
     id: 16,
     img: "https://m.media-amazon.com/images/I/618I64n2QdL._AC_UL480_FMwebp_QL65_.jpg",
-    title: "GT Racing Gaming Chair",
+    title: "GT Chair",
     rating: 5,
     reviews: 4,
     newPrice: "230000",
@@ -178,7 +178,7 @@ const data = [
   {
     id: 17,
     img: "https://m.media-amazon.com/images/I/61dVV8sjTLL._AC_UL480_FMwebp_QL65_.jpg",
-    title: "CM7002 Gaming Headset ",
+    title: "CM72 Headset ",
     rating: 5,
     reviews: 4,
     newPrice: "140000",
@@ -189,7 +189,7 @@ const data = [
   {
     id: 18,
     img: "https://m.media-amazon.com/images/I/71w951foCoL._AC_UY327_FMwebp_QL65_.jpg",
-    title: "Vans Smart TV",
+    title: "LG Smart TV",
     rating: 5,
     reviews: 4,
     newPrice: "430000",
@@ -200,7 +200,7 @@ const data = [
   {
     id: 19,
     img: "https://m.media-amazon.com/images/I/81p9DPknjLL._AC_UL480_FMwebp_QL65_.jpg",
-    title: "Portable Blueetoth Speaker",
+    title: "C360 Speaker",
     rating: 5,
     reviews: 4,
     newPrice: "70000",
@@ -211,7 +211,7 @@ const data = [
   {
     id: 20,
     img: "https://m.media-amazon.com/images/I/71prAUi3+NL._AC_UL480_FMwebp_QL65_.jpg",
-    title: "Nuesta Surge Protecor",
+    title: "XV Surge Protecor",
     rating: 4.5,
     reviews: 4,
     newPrice: "20000",
@@ -222,7 +222,7 @@ const data = [
   {
     id: 21,
     img: "https://m.media-amazon.com/images/I/61Jjxzg7Q1L._AC_UY327_FMwebp_QL65_.jpg",
-    title: "Samsung Galaxy Z fold 6",
+    title: "Samsung Z fold 6",
     rating: 2,
     reviews: 4,
     newPrice: "440000",
@@ -245,7 +245,7 @@ const data = [
   {
     id: 23,
     img: "https://m.media-amazon.com/images/I/61UBzkPgdkL._AC_UL960_FMwebp_QL65_.jpg",
-    title: "Gaming Chair Massage",
+    title: "Chair Massage",
     rating: 5,
     reviews: 4,
     newPrice: "250000",
@@ -256,10 +256,10 @@ const data = [
   {
     id: 24,
     img: "https://m.media-amazon.com/images/I/71ygD+0w49L._AC_UY327_FMwebp_QL65_.jpg",
-    title: "Newest Gaming Laptop",
+    title: "Gaming Laptop",
     rating: 4,
     reviews: 4,
-    newPrice: "1400000",
+    newPrice: "900000",
     company: "Xiang",
     color: "nil",
     category: "laptop",
@@ -278,7 +278,7 @@ const data = [
   {
     id: 26,
     img: "https://m.media-amazon.com/images/I/81djh1gfUwL._AC_UY327_FMwebp_QL65_.jpg",
-    title: "Bluetooth Speaker HB4",
+    title: "HB4 Speaker",
     rating: 5,
     reviews: 4,
     newPrice: "200000",
@@ -300,7 +300,7 @@ const data = [
   {
     id: 28,
     img: "https://m.media-amazon.com/images/I/6163yyOLZxL._AC_UL480_FMwebp_QL65_.jpg",
-    title: "AA Product Gaming Chair",
+    title: "AAR49 Chair",
     rating: 3,
     reviews: 4,
     newPrice: "180000",
@@ -311,7 +311,7 @@ const data = [
   {
     id: 29,
     img: "https://m.media-amazon.com/images/I/61vmeDoj5CL._AC_UY327_FMwebp_QL65_.jpg",
-    title: "RALAN Wireless Controller",
+    title: "B27 Controller",
     rating: 3,
     reviews: 4,
     newPrice: "70000",
