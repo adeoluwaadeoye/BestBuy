@@ -94,6 +94,7 @@ li {
 }
 
 .ml-3 {
+  margin-top: 3rem;
   margin-left: 20rem;
 }
 
@@ -124,7 +125,7 @@ li {
 .double-line::after {
   bottom: -10px;
   left: 0;
-  width: 60%;
+  width: 88%;
 }
 
 .rotate {

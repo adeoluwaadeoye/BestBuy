@@ -29,7 +29,7 @@ const IntroCarousel = () => {
                 Get the best deals on the latest products. Don't miss out on our
                 limited-time discounts.
               </p>
-              <button className="view-more-btn">View More</button>
+              <button className="view-more-btn">SHOP NOW</button>
             </div>
             <div className="slide-image-container">
               <img
@@ -49,7 +49,7 @@ const IntroCarousel = () => {
                 Get the best deals on the latest products. Don't miss out on our
                 limited-time discounts.
               </p>
-              <button className="view-more-btn">View More</button>
+              <button className="view-more-btn">SHOP NOW</button>
             </div>
             <div className="slide-image-container">
               <img
@@ -68,7 +68,7 @@ const IntroCarousel = () => {
                 Explore our new arrivals and find your perfect match. Fresh styles
                 now available!
               </p>
-              <button className="view-more-btn">View More</button>
+              <button className="view-more-btn">SHOP NOW</button>
             </div>
             <div className="slide-image-container">
               <img
@@ -87,7 +87,7 @@ const IntroCarousel = () => {
                 Explore our new arrivals and find your perfect match. Fresh styles
                 now available!
               </p>
-              <button className="view-more-btn">View More</button>
+              <button className="view-more-btn">SHOP NOW</button>
             </div>
             <div className="slide-image-container">
               <img
@@ -106,7 +106,7 @@ const IntroCarousel = () => {
                 Explore our new arrivals and find your perfect match. Fresh styles
                 now available!
               </p>
-              <button className="view-more-btn">View More</button>
+              <button className="view-more-btn">SHOP NOW</button>
             </div>
             <div className="slide-image-container">
               <img
