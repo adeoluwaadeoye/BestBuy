@@ -27,13 +27,13 @@ const Nav = ({ handleInputChange, query, toggleCart }) => {
       </div>
       <div className="nav-icons-container">
         <Link to="/wishlist" className="nav-link">
-          <FiHeart className="nav-icon" title="Wishlist" />
+          <FiHeart className="navigation-icon" title="Wishlist" />
         </Link>
-        <Link to="/user" className="nav-link">
-          <AiOutlineUserAdd className="nav-icon" title="User Profile" />
+        <Link to="/user" className="navigation-link">
+          <AiOutlineUserAdd className="navigation-icon" title="User Profile" />
         </Link>
         <Link to="/cart" className="cart-icon-container" onClick={toggleCart}>
-          <MdOutlineShoppingBag className="nav-icon" title="Cart" />
+          <MdOutlineShoppingBag className="navigation-icon" title="Cart" />
           {cart.totalQuantity > 0 && (
             <span className="cart-count">{cart.totalQuantity}</span>
           )}

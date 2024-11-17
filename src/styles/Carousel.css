@@ -1,16 +1,14 @@
 /* Global Styles for the Carousel */
 .carousel-slide {
     background-image: url(../assets/backg.svg);
-    background-size: cover; /* Adjust to fit the shape properly */
+    background-size: cover;
     background-position: center;
-    /* background-repeat: no-repeat;   */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 2rem;
     margin-bottom: 1rem;
-    min-height: 100vh;
-    border-radius: 10px;
+    min-height: 90vh;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: .3s ease;
 }
@@ -18,13 +16,13 @@
 
 /* Text Section Styles */
 .slide-text-container {
-    max-width: 35%;
+    max-width: 40%;
 }
 
 .slide-heading {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #333;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.5;
     margin-bottom: 15px;
     line-height: 1.2;
     text-transform: uppercase;
@@ -54,7 +52,7 @@
 .view-more-btn {
     padding: 17px 55px;
     font-size: 1.1rem;
-    background-color: var(--pink);
+    background-color: var(--orange);
     color: white;
     border: none;
     /* border-radius: 50px; */

@@ -33,7 +33,7 @@ footer {
 }
 
 .footer-category-link:hover {
-    color: var(--pink);
+    color: var(--orange);
     text-decoration: none;
 }
 
@@ -54,7 +54,7 @@ footer {
     font-size: 1.4rem;
     margin-bottom: 1rem;
     text-align: left;
-    color: var(--pink);
+    color: var(--orange);
 }
 
 .category-box-title {
@@ -138,7 +138,7 @@ footer {
 }
 
 .social-link a:hover {
-    color: var(--pink);
+    color: var(--orange);
 }
 
 /* Footer Bottom Section */

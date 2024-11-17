@@ -96,6 +96,8 @@
   font-size: 1.2rem;
   font-weight: 500;
   margin-top: 1.3rem;
+  color: var(--orange);
+  font-weight: bold;
 }
 
 /* Add to Cart Button */
@@ -118,7 +120,7 @@
 }
 
 .add-to-cart-btn:hover {
-  background-color: var(--pink);
+  background-color: var(--orange);
   color: #fff;
   border: none;
 }

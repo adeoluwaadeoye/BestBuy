@@ -13,6 +13,8 @@ import Card from "./components/Product/Card";
 import products from "./db/data";
 import "./index.css";
 import Featured from "./components/Featured/Featured";
+import Bestseller from "./Bestseller/Bestseller";
+
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -86,6 +88,7 @@ function App() {
           <Cart isVisible={isCartVisible} onClose={toggleCartVisibility} />
         </div>
         <Featured />
+        <Bestseller />
         <Footer />
       </CartProvider>
     </BrowserRouter>

@@ -95,10 +95,9 @@
   transform: translateX(2px);
 }
 
-.icon {
-  font-size: 1.5rem;
-  margin-right: 10px;
-  color: var(--bittersweet);
+.icon-image {
+  width: 35px;
+  margin-right: 5px;
 }
 
 .icon-container span {

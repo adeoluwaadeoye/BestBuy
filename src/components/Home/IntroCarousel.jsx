@@ -63,7 +63,7 @@ const IntroCarousel = () => {
         <SwiperSlide>
           <div className="carousel-slide">
             <div className="slide-text-container">
-              <h2 className="slide-heading">Discover Our Electronics at Unbeatable Prices </h2>
+              <h2 className="slide-heading">Electronics at Unbeatable Prices </h2>
               <p className="slide-paragraph">
                 Explore our new arrivals and find your perfect match. Fresh styles
                 now available!
