@@ -8,6 +8,7 @@
   flex-direction: column;
   align-items: center;
   overflow-y: auto;
-  top: 70px;
+  top: 120px;
   margin-left: 1rem;
+  overflow-x: hidden;
 }

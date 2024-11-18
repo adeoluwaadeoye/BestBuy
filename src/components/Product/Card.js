@@ -30,7 +30,7 @@ const Card = ({ id, img, title, rating, reviews, newPrice }) => {
           {Array.from({ length: emptyStars }, (_, index) => (
             <AiFillStar key={`empty-${index}`} className="empty-star" />
           ))}
-          <span className="total-reviews">{reviews} reviews</span>
+          <span className="total-reviews">({reviews} reviews)</span>
         </section>
 
         <div className="card-flex">
@@ -46,3 +46,4 @@ const Card = ({ id, img, title, rating, reviews, newPrice }) => {
 };
 
 export default Card;
+

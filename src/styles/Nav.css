@@ -1,53 +1,108 @@
 nav {
-  display: flex;
-  border-bottom: 2px solid var(--light-color);
-  justify-content: space-evenly;
-  align-items: center;
   z-index: 9999;
   top: 0;
   left: 0;
   position: fixed;
   width: 100%;
-  background-color: var(--onyx);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  color: #f7f6f6;
-  padding: 10px 20px;
+  background-color: var(--white);
+  color: #111;
   margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.203);
   
 }
 
-.logo-container h1{
-  color: #f3f3f3;
+.nav-top {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 14px;
+}
+
+.nav-top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.contact-info {
+  margin-right: auto;
+  color: #555;
+}
+
+.promo-banner {
+  margin-left: 20px;
+  font-weight: bold;
+  color: #d9534f;
+}
+
+.support-links {
+  margin-left: auto;
+}
+
+.top-link {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #111;
+  transition: color 0.3s;
+}
+
+.top-link:hover {
+  color: var(--orange);
+}
+
+
+
+
+
+.nav-bottom {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+
+}
+
+.logo-container a {
+  color: #111;
+  font-size: 1.3rem;
+}
+
+.logo-container a:hover {
+  text-decoration: none;
 }
 
 input {
-  padding: 12px 20px;
+  padding: 12px 40px;
   border: none;
-  background: #f7f6f6;
   outline: none;
+  border: 2px solid rgba(0, 0, 0, 0.203);
   margin-right: 20px;
   border-radius: 5px;
   position: relative;
-  width: 24rem;
+  width: 40rem;
 }
 
 .nav-icons-container {
   display: flex;
   gap: 15px;
   align-items: center;
+  color: #111;
 }
 
  .nav-icons-container a {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin-left: .5rem;
-  color: #f3f3f3;
+  color: #111;
 }
 
 .cart-count {
   background-color: #ff4757;
-  color: white;
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.3rem;
+  height: 1.3rem;
   padding: 0.5em;
   display: flex;
   justify-content: center;
@@ -55,8 +110,8 @@ input {
   border-radius: 50%;
   font-size: .7em;
   position: absolute;
-  top: 22px;
-  right: 15em;
+  top: 53px;
+  right: 8.55em;
   font-weight: bold;
   transition: transform 0.3s;
 }

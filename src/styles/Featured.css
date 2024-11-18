@@ -7,8 +7,7 @@
  .featured-container .heading {
    text-align: left;
    margin: 2rem 0 2rem 6rem;
-   font-size: 2rem;
-
+   font-size: 1.6rem;
  }
 
  /* Top 5 Products using 5 columns */
@@ -38,8 +37,8 @@
  .product-title {
    font-size: 18px;
    margin: 10px 0;
-   letter-spacing: 2px;
-   font-weight: 300;
+   letter-spacing: 1px;
+   font-weight: 500;
    text-align: left;
  }
 
@@ -52,7 +51,6 @@
    font-weight: bold;
    text-align: left;
    font-weight: bold;
-   color: var(--orange);
  }
 
  /* Bottom 2 Featured Products using 2 columns */
@@ -97,7 +95,7 @@
 
  .featured-price {
    font-size: 20px;
-   color: var(--orange);
+   font-weight: bolder;
    margin-bottom: 20px;
  }
 
@@ -121,6 +119,6 @@
 
  .add-to-cart:hover {
   background-color: var(--orange);
-  color: #fff;
+  color: #000;
   border: none;
 }

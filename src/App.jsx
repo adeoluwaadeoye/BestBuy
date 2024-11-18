@@ -15,7 +15,6 @@ import "./index.css";
 import Featured from "./components/Featured/Featured";
 import Bestseller from "./Bestseller/Bestseller";
 
-
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [query, setQuery] = useState("");
@@ -84,7 +83,6 @@ function App() {
         <div className="control">
           <Sidebar handleChange={handleChange} />
           <Products result={result} />
-
           <Cart isVisible={isCartVisible} onClose={toggleCartVisibility} />
         </div>
         <Featured />

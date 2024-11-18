@@ -46,8 +46,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.886);
-    color: white;
+    background-color: var(--black);
+    color: #111;
     opacity: 0;
     transform: translateY(100%);
     transition: opacity .7s ease, transform 0.3s ease;
@@ -63,9 +63,9 @@
   .product-details h5,
   .product-details p,
   .product-details .price-tag {
-   color: #fff;
    margin: 5px;
    padding: 5px;
+   color: #fff;
   }
   
   .price-tag {

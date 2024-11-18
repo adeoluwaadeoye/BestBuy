@@ -5,6 +5,7 @@ import data from '../db/BestSellerData';
 import { useCart } from '../Context/CartContext';
 import Testimonial from '../Bestseller/TestimonialSlider';
 import PopularItems from './PopularItems';
+import VideoPlayer from './VideoPlayer';
 
 
 const Bestseller = () => {
@@ -33,6 +34,11 @@ const Bestseller = () => {
 
         return () => clearInterval(interval);
     }, []);
+
+    const handleAddToCart = (e, item) => {
+        e.stopPropagation(); // Prevents event bubbling
+        addToCart({ id: item.id, title: item.title, img: item.img, price: item.newPrice });
+    };
 
     return (
         <div className="bestseller-container">
@@ -109,7 +115,7 @@ const Bestseller = () => {
                             <h2 className="product-brand">{item.brand}</h2>
                             <h3 className="product-title">{item.title}</h3>
                             <p className="product-price">₦{item.newPrice}</p>
-                            <button className="add-to-cart" onClick={() => addToCart(item)}>
+                            <button className="add-to-cart" onClick={(e) => handleAddToCart(e, item)}>
                                 Add to Cart
                             </button>
                         </div>
@@ -176,13 +182,7 @@ const Bestseller = () => {
                     </div>
 
                     {/* Video Section */}
-                    <div className="video-section">
-                        <h4>See the product in action!</h4>
-                        <video controls>
-                            <source src="https://m.media-amazon.com/images/S/aplus-media/sc/887a712c-86e6-4855-bbce-07bc0d2c9e10.mp4" type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
+                    <VideoPlayer />
 
                     {/* Brand Partnerships */}
                     <div className="brand-partners">

@@ -1,27 +1,23 @@
 /* Global Styles for the Carousel */
 .carousel-slide {
-    background-image: url(../assets/backg.svg);
-    background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 2rem;
     margin-bottom: 1rem;
-    min-height: 90vh;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-height: 85vh;
     transition: .3s ease;
 }
 
 
 /* Text Section Styles */
 .slide-text-container {
-    max-width: 40%;
+    max-width: 25%;
 }
 
 .slide-heading {
     font-size: 3rem;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.5;
     margin-bottom: 15px;
     line-height: 1.2;
@@ -37,16 +33,18 @@
 
 /* Image Section Styles */
 .slide-image-container {
-    max-width: 100%;
+    max-width: 60%;
 }
 
 .slide-image {
-    width: 80%;
+    width: 90%;
     height: auto;
     object-fit: cover;
     border-radius: 15px;
     object-fit: cover;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
 }
 
 .view-more-btn {
@@ -74,42 +72,46 @@
 }
 
 
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .carousel-slide {
-        flex-direction: column;
-        /* Stack content vertically on smaller screens */
-        padding: 20px;
-    }
-
-    .slide-text-container {
-        max-width: 100%;
-        padding-right: 0;
-        text-align: center;
-        /* Center text on smaller screens */
-    }
-
-    .slide-heading {
-        font-size: 2rem;
-        /* Smaller heading on mobile */
-    }
-
-    .slide-paragraph {
-        font-size: 1rem;
-        /* Adjust paragraph font size */
-    }
-
-    .view-more-btn {
-        width: 100%;
-        /* Full-width button on mobile */
-    }
-
-    .slide-image-container {
-        max-width: 100%;
-        /* Full-width image */
-        margin-top: 20px;
-        /* Add some spacing between text and image */
-    }
+.product-info {
+    width: 25%;
 }
 
+/* Countdown Timer Styling */
+.countdown-timer {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  
+  .time-box {
+    background-color: #fff; /* Violet background color */
+    color: #000; /* White text */
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    border: 2px solid #ff99008d; /* Darker border */
+    min-width: 80px;
+ 
+  }
+  
+  /* Price Section Styling */
+  .price-section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 1.5rem;
+  }
+  
+  .new-prices {
+    font-size: 2rem;
+    font-weight: bold;
+  }

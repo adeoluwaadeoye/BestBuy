@@ -3,12 +3,13 @@ footer {
     background-color: #2d2d2d;
     color: var(--onyx);
     padding: 1.3rem 0;
+    margin-top: 3rem;
 }
 
 /* Container Styling */
 .footer-category .container {
     border-bottom: 1px solid var(--onyx);
-    padding: 45px 150px;
+    padding: 10px 150px;
 }
 
 .footer-category-box {

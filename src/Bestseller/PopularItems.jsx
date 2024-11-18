@@ -15,13 +15,13 @@ const PopularItems = () => {
       img: "https://m.media-amazon.com/images/I/719XvPvIS9L._AC_UY327_FMwebp_QL65_.jpg",
       title: "Smart LED Screen",
       description: "Control your lighting from anywhere with your smartphone.",
-      price: "₦5,500",
+      price: "₦59,500",
     },
     {
       img: "https://m.media-amazon.com/images/I/61teHXr3vDL._AC_UY327_FMwebp_QL65_.jpg",
       title: "Oculus",
       description: "Portable, high-quality sound wherever you go.",
-      price: "₦8,000",
+      price: "₦98,000",
     },
   ];
 

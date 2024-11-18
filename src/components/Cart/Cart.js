@@ -7,8 +7,9 @@ const Cart = ({ isVisible, onClose }) => {
     const cartRef = useRef(null);
     const startY = useRef(0);
 
-    // New state for shipping cost
+    // New states for shipping cost and order confirmation
     const [shippingCost, setShippingCost] = useState(0);
+    const [isOrderConfirmed, setIsOrderConfirmed] = useState(false);
 
     useEffect(() => {
         if (isVisible) {
@@ -31,7 +32,7 @@ const Cart = ({ isVisible, onClose }) => {
         const currentY = e.touches[0].clientY;
         const difference = currentY - startY.current;
 
-        if (difference > 100) { // Close the cart if swiped down by more than 100px
+        if (difference > 100) {
             onClose();
         }
     };
@@ -45,6 +46,25 @@ const Cart = ({ isVisible, onClose }) => {
     // Calculate total cost including shipping
     const totalCost = (Number(cart.totalAmount) || 0) + shippingCost;
 
+    // Adjust Quantity and Remove Item if Quantity reaches 0
+    const handleAdjustQuantity = (id, change) => {
+        adjustQuantity(id, change);
+        const item = cart.items.find((item) => item.id === id);
+        if (item && item.quantity <= 1 && change === -1) {
+            removeFromCart(id);
+        }
+    };
+
+    // Handle order confirmation
+    const handleCheckout = () => {
+        setIsOrderConfirmed(true);
+    };
+
+    const closeOrderConfirmation = () => {
+        setIsOrderConfirmed(false);
+        onClose(); // Optionally close the cart after confirming
+    };
+
     return (
         <section
             ref={cartRef}
@@ -53,7 +73,6 @@ const Cart = ({ isVisible, onClose }) => {
             onTouchMove={handleTouchMove}
         >
             <div className="cart-content">
-                {/* Left Side - Cart Items */}
                 <div className="cart-items-section">
                     <div className="cart-header">
                         <h2>Shopping Cart</h2>
@@ -64,7 +83,7 @@ const Cart = ({ isVisible, onClose }) => {
                         <div className="cart-columns">
                             <span>Product Details</span>
                             <span>Quantity</span>
-                            <span>Price</span> {/* New Price heading */}
+                            <span>Price</span>
                             <span>Total</span>
                         </div>
 
@@ -90,12 +109,11 @@ const Cart = ({ isVisible, onClose }) => {
                                     </div>
 
                                     <div className="quantity-controls">
-                                        <button onClick={() => adjustQuantity(item.id, -1)} className="quantity-btn">-</button>
+                                        <button onClick={() => handleAdjustQuantity(item.id, -1)} className="quantity-btn">-</button>
                                         <span className="quantity-amount">{item.quantity}</span>
-                                        <button onClick={() => adjustQuantity(item.id, 1)} className="quantity-btn">+</button>
+                                        <button onClick={() => handleAdjustQuantity(item.id, 1)} className="quantity-btn">+</button>
                                     </div>
 
-                                    {/* New Price Column */}
                                     <div className="item-price">
                                         <p>₦{(Number(item.price) || 0).toFixed(2)}</p>
                                     </div>
@@ -109,7 +127,6 @@ const Cart = ({ isVisible, onClose }) => {
                     </div>
                 </div>
 
-                {/* Right Side - Order Summary */}
                 <div className="order-summary-section">
                     <h2>Order Summary</h2>
                     <p>Order: {cart.items.length}</p>
@@ -133,9 +150,20 @@ const Cart = ({ isVisible, onClose }) => {
                         <div><p>TOTAL COST</p></div>
                         <p>₦{totalCost.toFixed(2)}</p>
                     </div>
-                    <button className="checkout-btn">Proceed to Checkout</button>
+                    <button className="checkout-btn" onClick={handleCheckout}>Proceed to Checkout</button>
                 </div>
             </div>
+
+            {/* Confirmation Prompt */}
+            {isOrderConfirmed && (
+                <div className="order-confirmation-overlay">
+                    <div className="order-confirmation">
+                        <h3>Order Confirmed!</h3>
+                        <p>Thank you for your purchase. Your order is on its way.</p>
+                        <button onClick={closeOrderConfirmation} className="close-btn">Close</button>
+                    </div>
+                </div>
+            )}
         </section>
     );
 };
