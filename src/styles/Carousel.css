@@ -115,3 +115,233 @@
     font-size: 2rem;
     font-weight: bold;
   }
+
+
+
+  /* ====MEDIA QUERIES===== */
+  /* Mobile Phones (up to 576px) */
+@media (max-width: 576px) {
+    .carousel-slide {
+      flex-direction: column;
+      padding: 1rem;
+      min-height: auto;
+    }
+  
+    .slide-text-container {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .slide-heading {
+      font-size: 2rem;
+    }
+  
+    .slide-paragraph {
+      font-size: 1rem;
+    }
+  
+    .slide-image-container {
+      max-width: 100%;
+    }
+  
+    .slide-image {
+      width: 100%;
+      height: auto;
+    }
+  
+    .view-more-btn {
+      padding: 12px 35px;
+      font-size: 1rem;
+    }
+  
+    .countdown-timer {
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    .time-box {
+      min-width: 60px;
+      font-size: 1.3rem;
+    }
+  
+    .price-section {
+      flex-direction: column;
+      gap: 5px;
+      align-items: center;
+    }
+  
+    .old-price,
+    .new-prices {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Tablets (576px to 768px) */
+  @media (min-width: 576px) and (max-width: 768px) {
+    .carousel-slide {
+      flex-direction: column;
+      padding: 1.5rem;
+    }
+  
+    .slide-text-container {
+      max-width: 90%;
+      text-align: center;
+    }
+  
+    .slide-heading {
+      font-size: 2.5rem;
+    }
+  
+    .slide-paragraph {
+      font-size: 1.1rem;
+    }
+  
+    .slide-image-container {
+      max-width: 90%;
+    }
+  
+    .slide-image {
+      width: 100%;
+      height: auto;
+    }
+  
+    .view-more-btn {
+      padding: 14px 45px;
+      font-size: 1rem;
+    }
+  
+    .countdown-timer {
+      flex-direction: row;
+      gap: 8px;
+    }
+  
+    .time-box {
+      min-width: 70px;
+      font-size: 1.5rem;
+    }
+  
+    .price-section {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .old-price {
+      font-size: 1.3rem;
+    }
+  
+    .new-prices {
+      font-size: 1.7rem;
+    }
+  }
+  
+  /* Small Laptops (768px to 992px) */
+  @media (min-width: 768px) and (max-width: 992px) {
+    .carousel-slide {
+      flex-direction: row;
+      padding: 2rem;
+    }
+  
+    .slide-text-container {
+      max-width: 40%;
+    }
+  
+    .slide-heading {
+      font-size: 2.8rem;
+    }
+  
+    .slide-paragraph {
+      font-size: 1.2rem;
+    }
+  
+    .slide-image-container {
+      max-width: 50%;
+    }
+  
+    .slide-image {
+      width: 90%;
+      height: auto;
+    }
+  
+    .view-more-btn {
+      padding: 15px 50px;
+      font-size: 1.1rem;
+    }
+  
+    .countdown-timer {
+      gap: 10px;
+    }
+  
+    .time-box {
+      min-width: 75px;
+      font-size: 1.6rem;
+    }
+  
+    .price-section {
+      gap: 10px;
+    }
+  
+    .old-price {
+      font-size: 1.4rem;
+    }
+  
+    .new-prices {
+      font-size: 1.8rem;
+    }
+  }
+  
+  /* Medium to Large Screens (992px and above) */
+  @media (min-width: 992px) {
+    .carousel-slide {
+      flex-direction: row;
+      padding: 2rem;
+      min-height: 85vh;
+    }
+  
+    .slide-text-container {
+      max-width: 30%;
+    }
+  
+    .slide-heading {
+      font-size: 3rem;
+    }
+  
+    .slide-paragraph {
+      font-size: 1.2rem;
+    }
+  
+    .slide-image-container {
+      max-width: 60%;
+    }
+  
+    .slide-image {
+      width: 90%;
+      height: auto;
+    }
+  
+    .view-more-btn {
+      padding: 17px 55px;
+      font-size: 1.2rem;
+    }
+  
+    .countdown-timer {
+      gap: 12px;
+    }
+  
+    .time-box {
+      min-width: 80px;
+      font-size: 1.7rem;
+    }
+  
+    .price-section {
+      gap: 15px;
+    }
+  
+    .old-price {
+      font-size: 1.5rem;
+    }
+  
+    .new-prices {
+      font-size: 2rem;
+    }
+  }
+  
