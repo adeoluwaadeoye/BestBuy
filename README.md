@@ -51,31 +51,9 @@ npm start
 
 4. Open http://localhost:3000 in your browser.
 
-📂 Project Structure
-src/
-├── components/
-│   ├── Navbar.js
-│   ├── Cart.js
-│   ├── ProductCard.js
-│   ├── Sidebar.js
-│   ├── Testimonial.js
-│   └── ...
-├── pages/
-│   ├── Home.js
-│   ├── ProductPage.js
-│   └── ...
-├── context/
-│   └── CartContext.js
-├── data/
-│   └── data.js
-├── styles/
-│   └── Nav.css
-└── App.js
-
-
 ![Website Preview](https://crystallshop.netlify.app/)
-
-![Cart Page](assets/cart.png)
+<br>
+![Cart Page](assets/screenshots/cart.png)
 
 
 
@@ -83,5 +61,7 @@ src/
 
 📧 Contact
 Name: Adeoluwa Adeoye
+<br>
 Email: adeoluadeoye7@gmail.com
+<br>
 GitHub: https://github.com/adeoluwaadeoye
