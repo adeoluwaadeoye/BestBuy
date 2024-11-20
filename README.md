@@ -51,9 +51,11 @@ npm start
 
 4. Open http://localhost:3000 in your browser.
 
-![Website Preview](https://crystallshop.netlify.app/)
 <br>
-![Cart Page](assets/screenshots/cart.png)
+
+![Product page](src/screenshots/product-page.png)
+<br>
+![Cart Page](src/screenshots/cart.png)
 
 
 
