@@ -302,3 +302,12 @@
     border: none;
     cursor: pointer;
 }
+
+
+.empty-cart {
+    position: absolute;
+    bottom: 18rem;
+    left: 28rem;
+    justify-content: center;
+    font-weight: bold;
+}

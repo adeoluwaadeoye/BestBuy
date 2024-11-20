@@ -16,7 +16,7 @@ const Nav = ({ handleInputChange, query, toggleCart }) => {
         <div className="nav-top-content">
           {/* Contact Information */}
           <span className="contact-info">
-            📞 Call us: +234 (234) 567-8900 | ✉️ Email: support@bestbuy.com
+            📞 Call us: +234 (000) 567-8900 | ✉️ Email: support@bestbuy.com
           </span>
           {/* Promotional Banner */}
           <span className="promo-banner">

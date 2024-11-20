@@ -88,7 +88,7 @@ const Cart = ({ isVisible, onClose }) => {
                         </div>
 
                         {cart.items.length === 0 ? (
-                            <p>Your cart is empty</p>
+                            <p className="empty-cart">Your cart is empty</p>
                         ) : (
                             cart.items.map((item) => (
                                 <div key={item.id} className="cart-item">
