@@ -16,28 +16,6 @@ CSS (Responsive Styling)
 React Icons (Iconography)
 Build Tool: Vite or Create React App
 
-ChatGPT
-Here’s a README.md file with everything concise and contained on a single page:
-
-🛒 E-Commerce React Website
-An elegant and responsive e-commerce platform built with React, offering features like product filtering, a dynamic cart, and user-friendly navigation.
-
-🌟 Features
-Dynamic Cart: Add/remove items, real-time quantity updates.
-Product Filtering: Filter by price and categories.
-Search: Find products easily with a dynamic search bar.
-Wishlist: Save items for later.
-Responsive Design: Optimized for all devices.
-Smooth Animations: Engaging transitions for a seamless experience.
-🚀 Technologies Used
-React (Frontend Framework)
-React Router (Routing)
-Context API (State Management)
-CSS (Responsive Styling)
-React Icons (Iconography)
-Build Tool: Vite or Create React App
-
-
 1. 🖥️ Installation
 Clone the repository:
 git clone https://github.com/adeoluwaadeoye/BestBuy
